@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Fetch data from API using JQuery</h2>
+<div class="jumbotron">
+    
+</div>
+
+<div>
+    <div style="padding:10px">
+        <input id="btnGetData" type="button" value="Fetch Data from API" class="btn btn-danger"  />
+    </div>
+    <div id="updatePanel" style="width:90%; margin:0,auto; padding:10px">
+
+    </div>
+
+</div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var apiBaseUrl = "http://localhost:44385/";
+            $('#btnGetData').click(function () {
+                $.ajax({
+                    url: apiBaseUrl + 'api/Example',
+                    type: 'GET',
+                    dataType: 'Json',
+                    success: function (data) {
+                        var $table = $('<table/>').addClass('table table-responseive table-striped table-boradered');
+                        var $header = $('<thead/>').html('<tr><th>Name</th> <th>Email</th></tr>');
+                        $table.append($header);
+                        $.each(data, function (i, val) {
+                            var $row = $('<tr/>');
+                            $row.append($('<td/>').html(val.Name));
+                            $row.append($('<td/>').html(val.Email));
+                            $table.append($row);
+                        });
+                        $('#updatePanel').html($table);
+                    },
+                    error: function (data) {
+                        console.log(data);
+                        alert('Error!');
+                        
+                    }
+
+
+                });
+            });
+        });
+
+    </script>
+        
+    }

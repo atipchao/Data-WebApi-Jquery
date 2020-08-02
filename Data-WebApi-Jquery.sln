@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data-WebApi-Jquery", "Data-WebApi-Jquery\Data-WebApi-Jquery.csproj", "{46F2C2B0-496D-40DD-A23F-497D90C46BDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient.Web", "WebClient.Web\WebClient.Web.csproj", "{4FD9E13A-C9D5-42EA-9DD3-91AE49BDE1A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46F2C2B0-496D-40DD-A23F-497D90C46BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F2C2B0-496D-40DD-A23F-497D90C46BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F2C2B0-496D-40DD-A23F-497D90C46BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F2C2B0-496D-40DD-A23F-497D90C46BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD9E13A-C9D5-42EA-9DD3-91AE49BDE1A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD9E13A-C9D5-42EA-9DD3-91AE49BDE1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD9E13A-C9D5-42EA-9DD3-91AE49BDE1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD9E13A-C9D5-42EA-9DD3-91AE49BDE1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AF49704-686A-4A47-9D2D-C28881E79667}
+	EndGlobalSection
+EndGlobal
