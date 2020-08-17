@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data-WebApi-Jquery", "Data-WebApi-Jquery\Data-WebApi-Jquery.csproj", "{46F2C2B0-496D-40DD-A23F-497D90C46BDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient.Web", "WebClient.Web\WebClient.Web.csproj", "{4FD9E13A-C9D5-42EA-9DD3-91AE49BDE1A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWeb", "WebClient.Web\ClientWeb.csproj", "{4FD9E13A-C9D5-42EA-9DD3-91AE49BDE1A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,50 @@
+﻿@model Data_WebApi_Jquery.Models.Employee
+@{
+    ViewBag.Title = "Part4";
+}
+
+<h2>Part4</h2>
+<style>
+    span.field-validation-error {
+        color: red;
+    }
+</style>
+<h2>Part4 - Post data to Web API using HTTP Client (in MVC client application)</h2>
+<div style="max-width:600px;">
+    @using (Html.BeginForm("Part4", "Part4", FormMethod.Post, new { role = "form" }))
+    {
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @if (ViewBag.Result != null)
+            {
+                <div style="color:red">@ViewBag.Result</div>
+            }
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(a => a.Name)
+            @Html.TextBoxFor(a => a.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(a => a.Name)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(a => a.Email)
+            @Html.TextBoxFor(a => a.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(a => a.Email)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(a => a.Department)
+            @Html.TextBoxFor(a => a.Department, new { @class = "form-control" })
+            @Html.ValidationMessageFor(a => a.Department)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(a => a.PhotoPath)
+            @Html.TextBoxFor(a => a.PhotoPath, new { @class = "form-control" })
+            @Html.ValidationMessageFor(a => a.PhotoPath)
+        </div>
+        <input type="submit" value="Create" class="btn btn-default" />
+    }
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

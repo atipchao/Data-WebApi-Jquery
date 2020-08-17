@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace ClientWeb.Controllers
 {
-    public class TestController : Controller
+    public class Part3Controller : Controller
     {
-        // GET: Test
+        // GET: Part3
         public ActionResult Index()
         {
             return View();

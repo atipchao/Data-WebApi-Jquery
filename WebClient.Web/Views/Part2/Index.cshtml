@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Data_WebApi_Jquery.Models.Employee>
+
+@{
+    ViewBag.Title = "Part2";
+}
+
+<h2>Part2 - Fetch data from WebAPI using HTTPClient</h2>
+<div id="updatePanel" style="width:90%; padding:10px; margin:0 auto;">
+    <table class="table table-responsive table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Dept</th>
+                <th>Photo Path</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var i in Model)
+            {
+                <tr>
+                    <td>@i.Name</td>
+                    <td>@i.Email</td>
+                    <td>@i.Department</td>
+                    <td>@i.PhotoPath</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

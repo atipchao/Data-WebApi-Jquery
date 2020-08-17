@@ -24,7 +24,7 @@ namespace Data_WebApi_Jquery
         {
             string[] allowedOrigin = new string[]
             {
-                "http://localhost:53985"
+                "http://localhost:53985"                
             };
             var origin = HttpContext.Current.Request.Headers["Origin"];
             if(origin != null && allowedOrigin.Contains(origin))
