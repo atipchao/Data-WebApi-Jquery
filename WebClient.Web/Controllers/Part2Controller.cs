@@ -13,7 +13,7 @@ namespace ClientWeb.Controllers
     public class Part2Controller : Controller
     {
         // GET: Part2
-        public ActionResult Index()
+        public ActionResult Index() 
         {
             List<Employee> list = new List<Employee>();
             HttpClient client = new HttpClient();

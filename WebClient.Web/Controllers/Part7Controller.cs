@@ -8,7 +8,7 @@ using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Mvc;
 using ClientWeb.Models;
-using WebClient.Web.Models;
+//using WebClient.Web.Models;
 
 using Data_WebApi_Jquery.Models;
 using Data_WebApi_Jquery.Controllers;
@@ -74,13 +74,7 @@ namespace ClientWeb.Controllers
                     accessToken.TokenString = token.access_token;
                     Session["SelectedProductName"] = token.access_token;
 
-                    using (EmpDBEntities conn = new EmpDBEntities())
-                    {
-                        //conn.Add(accessToken); 
-                        
-                    };
-                    //_db.AccessTokens.Add(accessToken);
-                    //_db.SaveChanges();
+                    
                     try
                     {
                         using (EmpDBEntities dc = new EmpDBEntities())

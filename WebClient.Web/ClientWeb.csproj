@@ -148,6 +148,7 @@
     <Compile Include="Controllers\Part3Controller.cs" />
     <Compile Include="Controllers\Part4Controller.cs" />
     <Compile Include="Controllers\Part7Controller.cs" />
+    <Compile Include="Controllers\Part8Controller.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -155,6 +156,7 @@
     <Compile Include="Models\AccessToken.cs" />
     <Compile Include="Models\Part7DetailView.cs" />
     <Compile Include="Models\Part7IndexView.cs" />
+    <Compile Include="Models\Part8IndexView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\TokenStuff.cs" />
   </ItemGroup>
@@ -199,6 +201,7 @@
     <Content Include="Views\Part3\Index.cshtml" />
     <Content Include="Views\Part4\Part4.cshtml" />
     <Content Include="Views\Part7\Index.cshtml" />
+    <Content Include="Views\Part8\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
