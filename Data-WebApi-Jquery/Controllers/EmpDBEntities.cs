@@ -18,6 +18,7 @@ namespace Data_WebApi_Jquery.Controllers
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<AccessToken> AccessTokens { get; set; }
+        public DbSet<FileUpload> FileUploads { get; set; }
 
     }
 }

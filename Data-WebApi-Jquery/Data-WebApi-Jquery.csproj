@@ -172,6 +172,7 @@
     <Compile Include="Models\AccessToken.cs" />
     <Compile Include="Models\AuthenticationToken.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\FileUpload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
